@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,300;1,500&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: poppins;
+
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background:#f2f2f2;
+    color:#404040;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.content-login{
+    width:320px;
+    height:500px;
+    Background:#f1f1f1;
+    border-radius: 25px;
+    padding:30px;
+    box-shadow:  -8px -8px 16px #d0d0d0,
+                 8px 8px 16px #ffffff;
+    overflow: hidden;
+    /* display:none; */
+}
+.content-login h1, .content-signup h1{
+    text-align: center;
+    margin:40px 0;
+    color:#ff8000;
+}
+.content-login input,
+    .content-signup input{
+    width:100%;
+    height:35px;
+    padding:10px 20px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+}
+
+.content-login p{
+    font-size: 13px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn{
+    width:100%;
+    height:35px;
+    background:#ff8000;
+    text-align: center;
+    margin-top:20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f2f2f2;
+    font-size: 18px;
+    font-weight: 400;
+    padding:10px 0;
+}
+
+.create a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin:20px;
+    color:#4bb5f3;
+}
+.label{
+    position:relative;
+}
+label{
+    position: absolute;
+    top:5px;
+    left:20px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 400;
+    color:#685e5e;
+
+}
+.content-login input:valid ~ label,
+.content-login input:focus ~ label
+
+{
+    top:-25px;
+    left:0;
+    font-size: 12px;
+    outline: none;
+   
+}
+ input[type=mail],
+input[type=password],
+input[type=text]
+
+{
+    color:#685e5e;
+    
+}
+/* sign up */
+.content-signup{
+    width:320px;
+    height:500px;
+    Background:#f1f1f1;
+    border-radius: 25px;
+    padding:30px;
+    box-shadow:  -8px -8px 16px #d0d0d0,
+                 8px 8px 16px #ffffff;
+}
+.content-signup input:valid ~ label,
+.content-signup input:focus ~ label
+
+{
+    top:-25px;
+    left:0;
+    font-size: 12px;
+   
+}
